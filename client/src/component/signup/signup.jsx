@@ -11,7 +11,7 @@ export function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/users', {
+      const response = await axios.post('http://localhost:5000/api/users', {
         username,
         email,
         password,
